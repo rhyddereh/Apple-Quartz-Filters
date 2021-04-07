@@ -11,7 +11,7 @@ The following text is his:
 It uses the poorly documented Quartz filtering ability for PDFs in Preview. There are a couple of articles I found here or elsewhere on the web, but they still don't make things simple.
 
 You can manually edit those same settings (using Colorsync Utility) but can also benefit from my trial-and-error process and directly download from my iDisk.
-After download and decompressions, *simply drag the downloaded "Filters" folder to your Library folder* (inside your user folder to install it just for this user, or at the root level of your hard disk in order to install it for all users) - And if you already have such a folder, simply copy the contents of the downloaded folder into it.
+After download and decompressions, *simply drag the downloaded "Filters" folder to /Library/PDF Services* - And if you already have such a folder, simply copy the contents of the downloaded folder into it.
 
 Feel free to use, download, copy, use the idea ... in any way you like.
 
@@ -42,3 +42,10 @@ As an example, using a 73 MB PDF from a 55 page Powerpoint presentation, the com
 - 300 dpi average quality : 10.2 MB
 - 600 dpi low quality : 16.0 MB
 - 600 dpi average quality : 20.3 MB
+
+## Note:
+In Lion, the `*.qfilter` files should be copied to the following location: `/Library/Filters`
+
+The filters will **not** show up in Preview if the files are copied to the user's folder `~/Library/Filters`
+
+Alternatively, in Mountain Lion, since there is no `/Library/Filters` folder by default, you can put them in `/Library/PDF Services`
